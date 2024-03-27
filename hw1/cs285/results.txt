@@ -1,0 +1,154 @@
+Using Ant task
+Collecting data for eval...
+Eval_AverageReturn : 2063.17138671875
+Eval_StdReturn : 0.0
+Eval_MaxReturn : 2063.17138671875
+Eval_MinReturn : 2063.17138671875
+Eval_AverageEpLen : 1000.0
+Train_AverageReturn : 4681.891673935816
+Train_StdReturn : 30.70862278765526
+Train_MaxReturn : 4712.600296723471
+Train_MinReturn : 4651.18305114816
+Train_AverageEpLen : 1000.0
+Training Loss : 0.03868953138589859
+Train_EnvstepsSoFar : 0
+TimeSinceStart : 54.14034080505371
+Initial_DataCollection_AverageReturn : 4681.891673935816
+Done logging...
+
+
+python cs285/scripts/run_hw1.py \
+--expert_policy_file cs285/policies/experts/Ant.pkl \
+--env_name Ant-v4 --exp_name bc_ant --n_iter 1 \
+--expert_data cs285/expert_data/expert_data_Ant-v4.pkl \
+--video_log_freq -1 --ep_len 1000 --eval_batch_size 5000
+
+Eval_AverageReturn : 1323.1339111328125
+Eval_StdReturn : 458.9343566894531
+Eval_MaxReturn : 2063.17138671875
+Eval_MinReturn : 826.3662719726562
+Eval_AverageEpLen : 1000.0
+Train_AverageReturn : 4681.891673935816
+Train_StdReturn : 30.70862278765526
+Train_MaxReturn : 4712.600296723471
+Train_MinReturn : 4651.18305114816
+Train_AverageEpLen : 1000.0
+Training Loss : 0.03868953138589859
+Train_EnvstepsSoFar : 0
+TimeSinceStart : 4.545428037643433
+Initial_DataCollection_AverageReturn : 4681.891673935816
+Done logging...
+
+
+python cs285/scripts/run_hw1.py \
+--expert_policy_file cs285/policies/experts/HalfCheetah.pkl \
+--env_name HalfCheetah-v4 --exp_name bc_halfcheetah --n_iter 1 \
+--expert_data cs285/expert_data/expert_data_HalfCheetah-v4.pkl \
+
+Eval_AverageReturn : 3128.35302734375
+Eval_StdReturn : 0.0
+Eval_MaxReturn : 3128.35302734375
+Eval_MinReturn : 3128.35302734375
+Eval_AverageEpLen : 1000.0
+Train_AverageReturn : 4034.7999834965067
+Train_StdReturn : 32.8677631311341
+Train_MaxReturn : 4067.6677466276406
+Train_MinReturn : 4001.9322203653724
+Train_AverageEpLen : 1000.0
+Training Loss : 0.04402244836091995
+Train_EnvstepsSoFar : 0
+TimeSinceStart : 45.43418002128601
+Initial_DataCollection_AverageReturn : 4034.7999834965067
+
+python cs285/scripts/run_hw1.py \
+--expert_policy_file cs285/policies/experts/Hopper.pkl \
+--env_name Hopper-v4 --exp_name bc_hopper --n_iter 1 \
+--expert_data cs285/expert_data/expert_data_Hopper-v4.pkl \
+
+Collecting data for eval...
+Eval_AverageReturn : 1443.2506103515625
+Eval_StdReturn : 636.6721801757812
+Eval_MaxReturn : 2333.86865234375
+Eval_MinReturn : 883.368408203125
+Eval_AverageEpLen : 406.3333333333333
+Train_AverageReturn : 3717.5129936182307
+Train_StdReturn : 0.3530361779417035
+Train_MaxReturn : 3717.8660297961724
+Train_MinReturn : 3717.159957440289
+Train_AverageEpLen : 1000.0
+Training Loss : 0.03620936721563339
+Train_EnvstepsSoFar : 0
+TimeSinceStart : 16.670687913894653
+Initial_DataCollection_AverageReturn : 3717.5129936182307
+Done logging...
+
+Walker 2d  (num training steps = 1000)
+Eval_StdReturn : 512.7210083007812
+Eval_MaxReturn : 1681.517822265625
+Eval_MinReturn : 196.65968322753906
+Eval_AverageEpLen : 190.85714285714286
+Train_AverageReturn : 5383.310325177668
+Train_StdReturn : 54.15251563871789
+Train_MaxReturn : 5437.462840816386
+Train_MinReturn : 5329.1578095389505
+Train_AverageEpLen : 1000.0
+Training Loss : 0.06114453077316284
+Train_EnvstepsSoFar : 0
+TimeSinceStart : 1.6274209022521973
+Initial_DataCollection_AverageReturn : 5383.310325177668
+
+Walker2d  (num training steps = 2000)
+Eval_StdReturn : 1661.9573974609375
+Eval_MaxReturn : 4321.35009765625
+Eval_MinReturn : 235.8607635498047
+Eval_AverageEpLen : 403.25
+Train_AverageReturn : 5383.310325177668
+Train_StdReturn : 54.15251563871789
+Train_MaxReturn : 5437.462840816386
+Train_MinReturn : 5329.1578095389505
+Train_AverageEpLen : 1000.0
+Training Loss : 0.025002242997288704
+Train_EnvstepsSoFar : 0
+TimeSinceStart : 4.210421800613403
+Initial_DataCollection_AverageReturn : 5383.310325177668
+
+
+308.4097900390625 (steps = 1000)
+1344.2353515625 (steps = 1500)
+2132.998291015625 (steps = 2000)
+2619.79833984375 (steps = 2500)
+1334.7900390625 (s = 3000)
+1164.1776123046875 (s = 3500)
+3140.291015625 (s = 4000)
+4467.40869140625
+
+
+Dagger
+Eval_AverageReturn : 4644.6611328125
+Eval_StdReturn : 0.0
+Eval_MaxReturn : 4644.6611328125
+Eval_MinReturn : 4644.6611328125
+Eval_AverageEpLen : 1000.0
+Train_AverageReturn : 4595.560546875
+Train_StdReturn : 0.0
+Train_MaxReturn : 4595.560546875
+Train_MinReturn : 4595.560546875
+Train_AverageEpLen : 1000.0
+Training Loss : 0.0006106891087256372
+Train_EnvstepsSoFar : 9000
+TimeSinceStart : 23.09683132171631
+
+Eval_AverageReturn : 972.8186645507812
+Eval_MaxReturn : 972.8186645507812
+Eval_MinReturn : 972.8186645507812
+Eval_AverageEpLen : 1000.0
+Train_AverageReturn : 4681.891673935816
+Train_StdReturn : 30.70862278765526
+Train_MaxReturn : 4712.600296723471
+Train_MinReturn : 4651.18305114816
+Train_AverageEpLen : 1000.0
+Training Loss : 0.03868953138589859
+Train_EnvstepsSoFar : 0
+TimeSinceStart : 2.045281171798706
+Initial_DataCollection_AverageReturn : 4681.891673935816
+Done logging...
