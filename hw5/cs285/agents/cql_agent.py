@@ -42,6 +42,16 @@ class CQLAgent(DQNAgent):
 
         # TODO(student): modify the loss to implement CQL
         # Hint: `variables` includes qa_values and q_values from your CQL implementation
-        loss = loss + ...
+        
+        # Compute the log-sum-exp of the Q-values for all actions, scaled by temperature
+        # q-values = q-values that were actually taken!
+        # qa_values.shape == (batch_size, self.num_actions)
+        logsumexp_q_values = torch.logsumexp(variables['qa_values'] / self.cql_temperature, dim=1, keepdim=False) # TODO Musti: Double check cql_temperature term!!
+
+         # Compute the CQL regularizer term
+        cql_regularizer = self.cql_alpha * (logsumexp_q_values - variables['q_values']).mean()
+
+        # Add the CQL regularizer to the original loss
+        loss += cql_regularizer
 
         return loss, metrics, variables
